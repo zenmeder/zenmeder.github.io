@@ -1,0 +1,9 @@
+---
+layout: post
+title: "豆瓣电影数据分析"
+description: "豆瓣电影数据分析"
+categories: [crawler]
+tags: [scrapy]
+redirect_from:
+  - /2017/10/11/
+---
