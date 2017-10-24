@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -43,10 +44,10 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
 </script>
 </head>
 <body>
-<div id="ffb6aefb31b44ff486bc85077f62317e" style="width:800px;height:400px;"></div>
+<div id="63d81fca0cab40d7b2b3baf8af8a6e94" style="width:800px;height:400px;"></div>
 <script type="text/javascript">
-    var myChart_ffb6aefb31b44ff486bc85077f62317e = echarts.init(document.getElementById('ffb6aefb31b44ff486bc85077f62317e'));
-    var option_ffb6aefb31b44ff486bc85077f62317e = {
+    var myChart_63d81fca0cab40d7b2b3baf8af8a6e94 = echarts.init(document.getElementById('63d81fca0cab40d7b2b3baf8af8a6e94'));
+    var option_63d81fca0cab40d7b2b3baf8af8a6e94 = {
     "xAxis": [
         {
             "name": "",
@@ -55,7 +56,7 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
                 "alignWithLabel": false
             },
             "position": null,
-            "type": "category",
+            "type": "value",
             "inverse": false,
             "axisLabel": {
                 "margin": 8,
@@ -66,14 +67,6 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
             "nameLocation": "middle",
             "min": null,
             "nameGap": 25,
-            "data": [
-                "\u886c\u886b",
-                "\u7f8a\u6bdb\u886b",
-                "\u96ea\u7eba\u886b",
-                "\u88e4\u5b50",
-                "\u9ad8\u8ddf\u978b",
-                "\u889c\u5b50"
-            ],
             "nameTextStyle": {
                 "fontSize": 14
             }
@@ -82,8 +75,8 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
     "series": [
         {
             "type": "bar",
-            "stack": "stack_671655",
-            "name": "\u5546\u5bb6A",
+            "stack": "",
+            "name": "movie",
             "markPoint": {
                 "data": []
             },
@@ -104,48 +97,18 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
             "markLine": {
                 "data": []
             },
-            "seriesId": 671655,
+            "seriesId": 5389962,
             "data": [
-                5,
-                20,
-                36,
-                10,
-                75,
-                90
-            ]
-        },
-        {
-            "type": "bar",
-            "stack": "stack_671655",
-            "name": "\u5546\u5bb6B",
-            "markPoint": {
-                "data": []
-            },
-            "label": {
-                "normal": {
-                    "textStyle": {
-                        "color": "#000",
-                        "fontSize": 12
-                    },
-                    "formatter": null,
-                    "position": "top",
-                    "show": false
-                },
-                "emphasis": {
-                    "show": true
-                }
-            },
-            "markLine": {
-                "data": []
-            },
-            "seriesId": 671655,
-            "data": [
-                10,
-                25,
-                8,
-                60,
-                20,
-                80
+                "9.6",
+                "9.5",
+                "9.5",
+                "9.4",
+                "9.4",
+                "9.4",
+                "9.3",
+                "9.3",
+                "9.2",
+                "9.2"
             ]
         }
     ],
@@ -166,6 +129,73 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
         },
         "left": "95%",
         "show": true
+    },
+    "backgroundColor": "#fff",
+    "yAxis": [
+        {
+            "name": "",
+            "boundaryGap": true,
+            "axisTick": {
+                "alignWithLabel": false
+            },
+            "position": null,
+            "type": "category",
+            "inverse": false,
+            "axisLabel": {
+                "margin": 8,
+                "interval": "auto",
+                "formatter": "{value} ",
+                "rotate": 0
+            },
+            "max": null,
+            "nameLocation": "middle",
+            "min": null,
+            "nameGap": 25,
+            "data": [
+                "\u8096\u7533\u514b\u7684\u6551\u8d4e",
+                "\u9738\u738b\u522b\u59ec",
+                "\u7f8e\u4e3d\u4eba\u751f",
+                "\u8fd9\u4e2a\u6740\u624b\u4e0d\u592a\u51b7",
+                "\u963f\u7518\u6b63\u4f20",
+                "\u5341\u4e8c\u6012\u6c49",
+                "\u673a\u5668\u4eba\u603b\u52a8\u5458",
+                "\u65c5\u884c\u5230\u5b87\u5b99\u8fb9\u7f18",
+                "\u76d7\u68a6\u7a7a\u95f4",
+                "\u5343\u4e0e\u5343\u5bfb"
+            ],
+            "nameTextStyle": {
+                "fontSize": 14
+            }
+        }
+    ],
+    "series_id": 5389962,
+    "legend": [
+        {
+            "orient": "horizontal",
+            "data": [
+                "movie"
+            ],
+            "textStyle": {
+                "fontSize": 12,
+                "color": "#333"
+            },
+            "show": true,
+            "top": "top",
+            "left": "center",
+            "selectedMode": "multiple"
+        }
+    ],
+    "tooltip": {
+        "triggerOn": "mousemove|click",
+        "textStyle": {
+            "color": "#fff",
+            "fontSize": 14
+        },
+        "axisPointer": {
+            "type": "line"
+        },
+        "trigger": "item",
+        "formatter": null
     },
     "color": [
         "#c23531",
@@ -194,61 +224,6 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
         "#918597",
         "#f6f5ec"
     ],
-    "legend": [
-        {
-            "orient": "horizontal",
-            "data": [
-                "\u5546\u5bb6A",
-                "\u5546\u5bb6B"
-            ],
-            "textStyle": {
-                "fontSize": 12,
-                "color": "#333"
-            },
-            "show": true,
-            "top": "top",
-            "left": "center",
-            "selectedMode": "multiple"
-        }
-    ],
-    "tooltip": {
-        "triggerOn": "mousemove|click",
-        "textStyle": {
-            "color": "#fff",
-            "fontSize": 14
-        },
-        "axisPointer": {
-            "type": "line"
-        },
-        "trigger": "item",
-        "formatter": null
-    },
-    "yAxis": [
-        {
-            "name": "",
-            "boundaryGap": true,
-            "axisTick": {
-                "alignWithLabel": false
-            },
-            "position": null,
-            "type": "value",
-            "inverse": false,
-            "axisLabel": {
-                "margin": 8,
-                "interval": "auto",
-                "formatter": "{value} ",
-                "rotate": 0
-            },
-            "max": null,
-            "nameLocation": "middle",
-            "min": null,
-            "nameGap": 25,
-            "nameTextStyle": {
-                "fontSize": 14
-            }
-        }
-    ],
-    "series_id": 671655,
     "title": [
         {
             "subtextStyle": {
@@ -256,7 +231,7 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
                 "fontSize": 12
             },
             "subtext": "",
-            "text": "\u67f1\u72b6\u56fe\u6570\u636e\u5806\u53e0\u793a\u4f8b",
+            "text": "Top 10 movies",
             "textStyle": {
                 "color": "#000",
                 "fontSize": 18
@@ -264,10 +239,9 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
             "top": "auto",
             "left": "auto"
         }
-    ],
-    "backgroundColor": "#fff"
+    ]
 };
-    myChart_ffb6aefb31b44ff486bc85077f62317e.setOption(option_ffb6aefb31b44ff486bc85077f62317e);
+    myChart_63d81fca0cab40d7b2b3baf8af8a6e94.setOption(option_63d81fca0cab40d7b2b3baf8af8a6e94);
 </script>
 </body>
 </html>
