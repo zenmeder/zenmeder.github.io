@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+---
+layout: post
+title: "豆瓣电影数据分析"
+description: "豆瓣电影数据分析"
+categories: [crawler]
+tags: [scrapy]
+redirect_from:
+  - /2017/10/11/
+---
+# 豆瓣电影数据分析
+最近学习爬虫工具Scrapy，爬取了豆瓣电影的近万部电影，并做了一些简单的数据分析。
+
+使用的框架为 ***Scrapy***，[此处为项目链接](https://github.com/zenmeder/dbmovie), 语言为 ***python3***，爬取的电影数据存储在 ***sqlite*** 中， 已爬取的电影 **id** 存储在 ***redis*** 中（防止重复爬取相同数据）。
+### 1.数据综述
+本次共爬取了 **9822** 部电影，包含导演共 **6361** 人，演员 ***32291*** 人，***182*** 个国家和地区，***296*** 个语种。
+### 2.详细数据分析
+#### 2.1 最好的十部电影
+此处仅统计投票数超过 ***10000*** 票的电影（避免个体误差），最好的十部电影如下：
 <html>
 <head>
     <meta charset="utf-8">
@@ -245,3 +262,14 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
 </script>
 </body>
 </html>
+#### 2.2 作品最多的导演、演员、国家或地区、语种
+![mostMovieDirs](https://github.com/zenmeder/zenmeder.github.io/blob/master/_posts/_images/top10directors.png?raw=true)
+![mostMovieActors](https://github.com/zenmeder/zenmeder.github.io/blob/master/_posts/_images/mostMovieActors.png?raw=true)
+![mostMovieCtrs](https://github.com/zenmeder/zenmeder.github.io/blob/master/_posts/_images/mostMovieCtrs.png?raw=true)
+![mostMovieLags](https://github.com/zenmeder/zenmeder.github.io/blob/master/_posts/_images/mostMovieLags.png?raw=true)
+#### 2.3 最好的十位导演
+要求：作品不少于5部，排序标准：对其所有电影评分取平均数。
+![topDirectorsByRate](https://github.com/zenmeder/zenmeder.github.io/blob/master/_posts/_images/topDirectorsByRate.png?raw=true)
+#### 2.4 最好的十位演员
+要求：作品不少于10部，排序标准：对其所有电影评分取平均数。
+![topActorsByRate](https://github.com/zenmeder/zenmeder.github.io/blob/master/_posts/_images/topActorsByRate.png?raw=true)
